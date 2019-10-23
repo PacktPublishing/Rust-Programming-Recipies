@@ -1,2 +1,2 @@
 # Rust-Programming-Recipies-
-Rust Programming Recepies ,Published by Packt
+Rust Programming Recipies ,Published by Packt
