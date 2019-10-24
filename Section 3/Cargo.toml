@@ -1,0 +1,38 @@
+[package]
+name = "d3_lifetimes"
+version = "0.1.0"
+authors = ["matthew <matt@storyfeet.com>"]
+edition = "2018"
+
+[[bin]]
+name="v1_lifetime"
+path="src/main.rs"
+
+[[bin]]
+name="v2_closure"
+path="src/v2_closure.rs"
+
+[[bin]]
+name="v3_rc"
+path="src/v3_rc.rs"
+
+[[bin]]
+name="v4_channels"
+path="src/v4_channels.rs"
+
+[[bin]]
+name="v5_pool"
+path="src/v5_pool.rs"
+
+[[bin]]
+name="v6_rayon"
+path="src/v6_rayon.rs"
+
+[[bin]]
+name="v7_box"
+path="src/v7_box.rs"
+
+
+[dependencies]
+
+rayon = "1.0.3"

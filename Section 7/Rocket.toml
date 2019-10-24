@@ -1,0 +1,3 @@
+
+[global.databases]
+doodlebase = {url="postgres://matthew:packtdemopassword@localhost/doodle"}

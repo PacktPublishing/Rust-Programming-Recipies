@@ -1,0 +1,10 @@
+[package]
+name = "cfromr"
+version = "0.1.0"
+authors = ["matthew <matt@storyfeet.com>"]
+edition = "2018"
+
+[dependencies]
+
+[build-dependencies]
+cmake = "0.1.31"

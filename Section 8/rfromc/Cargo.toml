@@ -1,0 +1,11 @@
+[package]
+name = "rfromc"
+version = "0.1.0"
+authors = ["matthew <matt@storyfeet.com>"]
+edition = "2018"
+
+[lib]
+name="double"
+crate-type= ["dylib"]
+
+[dependencies]

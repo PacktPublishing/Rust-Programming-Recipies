@@ -1,0 +1,18 @@
+[package]
+name = "d5_futures"
+version = "0.1.0"
+authors = ["matthew <matt@storyfeet.com>"]
+edition = "2018"
+
+[lib]
+name="d5_futures"
+path="src/lib.rs"
+
+[[bin]]
+name="d5_server"
+path="src/main.rs"
+
+[dependencies]
+futures-preview = {version= "0.3.0-alpha.16" ,features=["compat","io-compat"]}
+tokio = "0.1.21"
+failure = "0.1.5"

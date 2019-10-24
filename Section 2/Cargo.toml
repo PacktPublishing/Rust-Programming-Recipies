@@ -1,0 +1,21 @@
+[package]
+name = "d2_iterators"
+version = "0.1.0"
+authors = ["matthew <matt@storyfeet.com>"]
+edition = "2018"
+license = "MIT"
+keywords = ["iterators","generics"]
+description = "Demu upload:Do not use this crate"
+readme= "readme.md"
+
+
+[lib]
+name="d2_iterators"
+path="src/lib.rs"
+
+[[bin]]
+name="d2_printout"
+path="src/main.rs"
+
+[dependencies]
+itertools = "0.8.0"
