@@ -9,7 +9,7 @@ pub struct Transaction {
     amount: u64,
 }
 
-pub fn get_first_transaction_for(fname: &str, uname: &str) -> Result<Transaction, failure::Error> {
+pub fn get_first_transaction_for(fname: &str, uname: &str) -> anyhow::Result<Transaction> {
     let trans = get_transactions(fname)?;
     for t in trans {
         if t.from == uname {

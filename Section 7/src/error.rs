@@ -1,22 +1,23 @@
-use failure_derive::Fail;
+//use failure_derive::Fail;
+use thiserror::*;
 use rocket::response::{Responder,Response};
 use rocket::Request;
 use rocket::http::{Status,ContentType};
 use std::io::Cursor;
 
-#[derive(Fail,Debug)]
+#[derive(Error,Debug)]
 pub enum DoodleWebErr {
-    #[fail(display="IO Error{}",0)]
+    #[error("IO Error{}",0)]
     IOErr(std::io::Error),
-    #[fail(display="Database Error {}",0)]
+    #[error("Database Error {}",0)]
     DatabaseErr(diesel::result::Error),
-    #[fail(display="User does not exist")]
+    #[error("User does not exist")]
     UserDoesNotExistErr,
-    #[fail(display="Password Incorrect")]
+    #[error("Password Incorrect")]
     PasswordErr,
-    #[fail(display="No Login Cookie Provided")]
+    #[error("No Login Cookie Provided")]
     NoCookie,
-    #[fail(display="Session Not Active")]
+    #[error("Session Not Active")]
     NoSession,
 }
 

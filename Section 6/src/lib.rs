@@ -1,12 +1,12 @@
 #[macro_use]
 extern crate diesel;
-pub mod schema;
 pub mod models;
+pub mod schema;
 
 use diesel::pg::PgConnection;
 use diesel::prelude::*;
 
-pub fn create_connection()->Result<PgConnection,failure::Error>{
+pub fn create_connection() -> anyhow::Result<PgConnection> {
     dotenv::dotenv().ok();
     Ok(PgConnection::establish(&std::env::var("DATABASE_URL")?)?)
 }

@@ -4,7 +4,7 @@ use clap::{clap_app, crate_version};
 use d6_doodle::{models::*, schema::*};
 use diesel::prelude::*;
 
-fn main() -> Result<(), failure::Error> {
+fn main() -> anyhow::Result<()> {
     let clap = clap_app!(doodle_cli =>
         (about:"A cli for the doodle database app")
         (version:crate_version!())

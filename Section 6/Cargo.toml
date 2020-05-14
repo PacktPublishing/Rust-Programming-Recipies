@@ -15,8 +15,10 @@ path="src/cli_main.rs"
 [dependencies]
 diesel = {version="1.4.2" , features=["postgres"]}
 dotenv = "0.14.1"
-failure = "0.1.5"
-failure_derive = "0.1.5"
+#failure = "0.1.5"
+#failure_derive = "0.1.5"
+anyhow = "1.0.30"
+thiserror="1.0.17"
 clap = "2.33.0"
 bcrypt = "0.4"
 

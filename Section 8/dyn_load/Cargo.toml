@@ -7,4 +7,5 @@ edition = "2018"
 [dependencies]
 
 libloading = "0.5.2"
-failure = "0.1.5"
+#failure = "0.1.5"
+anyhow="1.0.30"
