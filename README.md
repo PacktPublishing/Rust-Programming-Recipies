@@ -1,3 +1,5 @@
+# Note
+Since this course was developed. A key crate in these libraries has been deprecated. This is because the Rust standard library incorporated some of it's features into the std::error::Error trait. In order to fit with how most future libraries will use errors it is recommended to switch from using failure to anyhow, and failure_derive to this error.The code included in the project has been updated to fit with this change.
 
 # Rust Programming Receipes[Video]
 This is the code repository for [Rust Programming Receipes[Video]](https://www.packtpub.com/programming/rust-programming-recipes-video). It contains all the supporting project files necessary to work through the video course from start to finish.
