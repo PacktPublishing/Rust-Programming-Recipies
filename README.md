@@ -1,3 +1,8 @@
+## $5 Tech Unlocked 2021!
+[Buy and download this Video for only $5 on PacktPub.com](https://www.packtpub.com/product/rust-programming-recipes-video/9781838648664)
+-----
+*The $5 campaign         runs from __December 15th 2020__ to __January 13th 2021.__*
+
 # Note
 Since this course was developed. A key crate in these libraries has been deprecated. This is because the Rust standard library incorporated some of it's features into the std::error::Error trait. In order to fit with how most future libraries will use errors it is recommended to switch from using failure to anyhow, and failure_derive to this error.The code included in the project has been updated to fit with this change.
 
