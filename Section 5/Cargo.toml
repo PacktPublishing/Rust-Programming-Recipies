@@ -14,6 +14,6 @@ path="src/main.rs"
 
 [dependencies]
 futures-preview = {version= "0.3.0-alpha.16" ,features=["compat","io-compat"]}
-tokio = "0.1.21"
+tokio = "1.8.4"
 #failure = "0.1.5"
 anyhow="1.0.30"
