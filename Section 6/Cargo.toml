@@ -13,7 +13,7 @@ name="doodle_cli"
 path="src/cli_main.rs"
 
 [dependencies]
-diesel = {version="1.4.2" , features=["postgres"]}
+diesel = {version="1.4.6" , features=["postgres"]}
 dotenv = "0.14.1"
 #failure = "0.1.5"
 #failure_derive = "0.1.5"
