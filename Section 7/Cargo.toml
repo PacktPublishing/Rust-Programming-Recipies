@@ -11,7 +11,7 @@ rocket = "0.4.2"
 anyhow="1.0.30"
 thiserror="1.0.17"
 d6_doodle = {path="../Section 6/"}
-diesel = {version = "1.4.2", features = ["postgres"]}
+diesel = {version = "1.4.6", features = ["postgres"]}
 rand = "0.7.0"
 maud = {version = "0.21.0", features = ["rocket"]}
 
